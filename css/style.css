@@ -21,8 +21,29 @@ p {
 
 /* Utility Classes */
 
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 2rem;
+    overflow: hidden;
+}
+
 .text-primary {
     color: #93cb52;
+}
+
+.bg-light {
+    background: #f4f4f4;
+    color: #333;
+}
+
+.bg-dark {
+    background: #333;
+    color: #fff;
+}
+
+.text-center {
+    text-align: center;
 }
 
 .l-heading {
@@ -31,10 +52,24 @@ p {
     line-height: 1.1;
 }
 
+.m-heading {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.1;
+}
+
 .lead {
     font-size: 1.3rem;
     margin-bottom: 2rem;
 }
+
+.py1 { padding: 1.5rem 0;}
+.py-2 { padding: 2rem 0;}
+.py-3 { padding: 3rem, 0;}
+
+.p-1 { padding: 1.5rem }
+.p-2 { padding: 2rem }
+.p-3 { padding: 3rem }
 
 .btn {
     display: inline-block;
@@ -54,6 +89,15 @@ p {
     color: #fff;
 }
 
+.list {
+    margin: 0.5rem 0;
+    list-style: none;
+}
+
+.list li {
+    padding: 0.5rem 0;
+    border-bottom: #444 dotted 1px;
+}
 
 /* Navbar */
 
@@ -106,10 +150,50 @@ p {
     position: absolute;
     top: 60px;
     left:0;
-    width: 100%;
+    right:0;
+    bottom:0;
     background-color: rgba(0,0,0,0.4);
 }
 
 #showcase .showcase-content p.lead {
+
+}
+
+/* Section: What We Do */
+
+#what .items {
+    display: flex;
+    padding: 1rem;
+}
+
+#what .items .item {
+    flex: 1;
+    text-align: center;
+    padding: 1rem;
+}
+
+#what .items .item i {
+    background: #93cb52;
+    padding: 1rem;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+/* Section: Who We Are */
+
+#who {
+    display: flex;
+}
+
+#who div {
+    flex: 1;
+}
+
+#who .who-img {
+    background: url('../img/people.jpg') no-repeat 
+    center center/cover;
+}
+
+#who .who-text {
 
 }
