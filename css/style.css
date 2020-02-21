@@ -153,7 +153,7 @@ p {
     padding: 0 2rem;
     /* overlay */
     position: absolute;
-    top: 60px;
+    top: 65px;
     left:0;
     right:0;
     bottom:0;
@@ -215,4 +215,22 @@ width: 60%;
 
 #contact {
     display: flex;
+}
+
+#contact .map, #contact .contact-form {
+    flex: 1;
+}
+
+#contact .contact-form .form-group {
+    margin: 0.75rem;
+}
+
+#contact .contact-form label {
+    display: block;
+}
+
+#contact .contact-form input,
+#contact .contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
 }
