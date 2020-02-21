@@ -155,7 +155,45 @@ li {
 
 // Contact
 
-#contact .socials {
+.social-links {
     display: flex;
     flex-direction: row;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+
+    li {
+        padding: 1rem;
+
+    }
+}
+
+.social-links i {
+    background: $brand-dark;
+    color: $brand-light;
+    padding: 1rem;
+    border-radius: 50%;
+
+    &:hover {
+        background: $brand-accent;
+    }
+    a {
+        color: $brand-light;
+    }
+}
+
+// Footer
+
+#footer {
+    display: flex;
+    justify-content: space-between;
+
+    .newsletter-signup {
+        width: 50%
+    }
+
+    .copyright {
+        justify-content: flex-end;
+    }
 }

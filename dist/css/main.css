@@ -118,6 +118,30 @@ li {
 #about .about-img {
   background: url("/img/abs-group.jpg") no-repeat top center/contain; }
 
-#contact .socials {
+.social-links {
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  margin: auto;
+  align-items: center;
+  text-align: center;
+  justify-content: center; }
+  .social-links li {
+    padding: 1rem; }
+
+.social-links i {
+  background: #14122a;
+  color: #d7ecef;
+  padding: 1rem;
+  border-radius: 50%; }
+  .social-links i:hover {
+    background: #DF1a57; }
+  .social-links i a {
+    color: #d7ecef; }
+
+#footer {
+  display: flex;
+  justify-content: space-between; }
+  #footer .newsletter-signup {
+    width: 50%; }
+  #footer .copyright {
+    justify-content: flex-end; }
