@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+* {
+  box-sizing: border-box;
+  margin:0;
+  padding: 0;
+}
+
+$brand-primary: #33328F;
+$brand-secondary: #1F1E44;
+$brand-dark: #14122a;
+$brand-light: #d7ecef;
+$brand-accent: #DF1a57;
+
+body {
+  background-color: $brand-light;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.4;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0.75rem 0;
+}
+
+li {
+    list-style: none;
+}
+
+// Utility Classes
+
+.text-primary {
+    color: $brand-accent;
+}
+
+.text-center {
+    text-align:center;
+  }
+
+.bg-light {
+    background: $brand-light;
+    color: $brand-dark;
+  }
+  
+  .bg-dark {
+    background: $brand-dark;
+    color: $brand-light;
+  }
+  
+  .bg-primary {
+    background: $brand-primary;
+    color: $brand-light;
+  }
+
+  .bg-accent {
+      background: $brand-accent;
+      color: $brand-light;
+  }
+
+.l-heading {
+    font-size: 4rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.1;
+  }
+  
+  .m-heading {
+    font-size: 2rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.1;
+  }
+
+.py-1 { padding: 1.5rem 0; }
+.py-2 { padding: 2rem 0; }
+.py-3 { padding: 3rem 0; }
+
+.p-1 { padding: 1.5rem; }
+.p-2 { padding: 2rem; }
+.p-3 { padding: 3rem; }
+
+// Navbar
+
+#navbar {
+    background-color: $brand-primary;
+    display: flex;
+    position: sticky;
+    top:0;
+    color: $brand-light;
+    justify-content: space-between;
+    z-index: 1;
+    padding: 1rem;
+
+    ul {
+        display:flex;
+        align-items: center;
+        list-style:none;
+
+        li a {
+            color: $brand-light;
+            padding: 0.75rem;
+            margin: 0 0.25rem;
+            &:hover {
+                background: $brand-accent;
+                border-radius: 5px;
+            }
+        }
+    }
+}
+
+// Hero
+
+#hero {
+    background: $brand-light url('/img/abs-logo.jpg') no-repeat top center/contain;
+    height: 70vh;
+    color: $brand-light;
+
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        padding: 0 2rem;
+    }
+}
+
+// News
+
+#news {
+    background: $brand-primary;
+}
+// Episodes
+
+#episodes .episode {
+    display: flex;
+    padding: 1rem;
+}
+
+// About
+
+#about {
+    display: flex;
+}
+
+#about div {
+    flex: 1;
+}
+
+#about .about-img {
+    background: url('/img/abs-group.jpg') no-repeat top center/contain;
+}
+
+// Contact
+
+#contact .socials {
+    display: flex;
+    flex-direction: row;
+}

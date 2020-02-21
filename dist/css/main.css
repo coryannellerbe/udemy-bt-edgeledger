@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: #d7ecef;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.4; }
+
+a {
+  text-decoration: none; }
+
+p {
+  margin: 0.75rem 0; }
+
+li {
+  list-style: none; }
+
+.text-primary {
+  color: #DF1a57; }
+
+.text-center {
+  text-align: center; }
+
+.bg-light {
+  background: #d7ecef;
+  color: #14122a; }
+
+.bg-dark {
+  background: #14122a;
+  color: #d7ecef; }
+
+.bg-primary {
+  background: #33328F;
+  color: #d7ecef; }
+
+.bg-accent {
+  background: #DF1a57;
+  color: #d7ecef; }
+
+.l-heading {
+  font-size: 4rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.1; }
+
+.m-heading {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.1; }
+
+.py-1 {
+  padding: 1.5rem 0; }
+
+.py-2 {
+  padding: 2rem 0; }
+
+.py-3 {
+  padding: 3rem 0; }
+
+.p-1 {
+  padding: 1.5rem; }
+
+.p-2 {
+  padding: 2rem; }
+
+.p-3 {
+  padding: 3rem; }
+
+#navbar {
+  background-color: #33328F;
+  display: flex;
+  position: sticky;
+  top: 0;
+  color: #d7ecef;
+  justify-content: space-between;
+  z-index: 1;
+  padding: 1rem; }
+  #navbar ul {
+    display: flex;
+    align-items: center;
+    list-style: none; }
+    #navbar ul li a {
+      color: #d7ecef;
+      padding: 0.75rem;
+      margin: 0 0.25rem; }
+      #navbar ul li a:hover {
+        background: #DF1a57;
+        border-radius: 5px; }
+
+#hero {
+  background: #d7ecef url("/img/abs-logo.jpg") no-repeat top center/contain;
+  height: 70vh;
+  color: #d7ecef; }
+  #hero .hero-content {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 2rem; }
+
+#news {
+  background: #33328F; }
+
+#episodes .episode {
+  display: flex;
+  padding: 1rem; }
+
+#about {
+  display: flex; }
+
+#about div {
+  flex: 1; }
+
+#about .about-img {
+  background: url("/img/abs-group.jpg") no-repeat top center/contain; }
+
+#contact .socials {
+  display: flex;
+  flex-direction: row; }
