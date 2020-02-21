@@ -42,6 +42,11 @@ p {
     color: #fff;
 }
 
+.bg-primary {
+    background: #93cb52;
+    color: #fff;
+}
+
 .text-center {
     text-align: center;
 }
@@ -194,7 +199,7 @@ p {
 
 }
 
-/* Clients */
+/* Section: Clients */
 
 #clients .items {
     display: flex;
@@ -206,3 +211,8 @@ margin: auto;
 width: 60%;
 }
   
+/* Section: Contact */
+
+#contact {
+    display: flex;
+}
