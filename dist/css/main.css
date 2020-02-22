@@ -11,7 +11,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #1F1E44; }
+  color: #DF1a57; }
   a:hover {
     color: #14122a; }
 
@@ -50,6 +50,11 @@ li {
 
 .m-heading {
   font-size: 2rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.1; }
+
+.s-heading {
+  font-size: 1.5rem;
   margin-bottom: 0.75rem;
   line-height: 1.1; }
 
@@ -130,9 +135,8 @@ button {
     #news .news-content .news-block {
       display: flex; }
 
-#episodes .episode {
-  display: flex;
-  padding: 1rem; }
+#episodes .episode h1 {
+  color: #1F1E44; }
 
 #about {
   display: flex; }

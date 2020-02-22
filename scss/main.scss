@@ -20,7 +20,7 @@ body {
 
 a {
   text-decoration: none;
-  color: $brand-secondary;
+  color: $brand-accent;
   &:hover {
       color: $brand-dark;
   }
@@ -72,6 +72,12 @@ li {
   
   .m-heading {
     font-size: 2rem;
+    margin-bottom: 0.75rem;
+    line-height: 1.1;
+  }
+
+  .s-heading {
+    font-size: 1.5rem;
     margin-bottom: 0.75rem;
     line-height: 1.1;
   }
@@ -177,8 +183,9 @@ button {
 // Episodes
 
 #episodes .episode {
-    display: flex;
-    padding: 1rem;
+    h1 {
+        color: $brand-secondary;
+    }
 }
 
 // About
