@@ -21,6 +21,12 @@ p {
 li {
   list-style: none; }
 
+.container {
+  width: 80%;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 2rem; }
+
 .text-primary {
   color: #DF1a57; }
 
@@ -138,10 +144,10 @@ button {
 #episodes .episode h1 {
   color: #1F1E44; }
 
-#about {
+#about .container {
   display: flex; }
 
-#about div {
+#about .container div {
   flex: 1; }
 
 #about .about-img {

@@ -36,6 +36,13 @@ li {
 
 // Utility Classes
 
+.container {
+    width: 80%;
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
 .text-primary {
     color: $brand-accent;
 }
@@ -190,11 +197,11 @@ button {
 
 // About
 
-#about {
+#about .container {
     display: flex;
 }
 
-#about div {
+#about .container div {
     flex: 1;
 }
 
