@@ -25,7 +25,7 @@ li {
   width: 80%;
   max-width: 1080px;
   margin: 0 auto;
-  padding: 2rem; }
+  padding: 2rem 0; }
 
 .text-primary {
   color: #DF1a57; }
@@ -156,9 +156,46 @@ button {
 
 #news {
   height: 100%; }
-  #news #blogPosts {
+  #news #blogPosts article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: #1F1E44;
+    padding: 2rem;
+    border-radius: 1rem;
+    margin-bottom: 2rem; }
+    #news #blogPosts article h2 {
+      color: #d7ecef;
+      text-align: left;
+      font-size: 2rem; }
+    #news #blogPosts article h3 {
+      text-align: left;
+      color: #DF1a57;
+      font-size: 1.4rem;
+      font-style: italic; }
+    #news #blogPosts article p {
+      text-align: left; }
+      #news #blogPosts article p a.button {
+        background: #DF1a57;
+        padding: 0.75rem;
+        margin: 0 0.25rem;
+        border-radius: 5px;
+        border: none;
+        font-size: 1.3rem;
+        color: #d7ecef; }
+        #news #blogPosts article p a.button:hover {
+          background: #d7ecef;
+          color: #DF1a57;
+          border-radius: 5px;
+          border: none; }
+
+@media (max-width: 768px) {
+  #blogPosts article {
+    flex-direction: column; }
+  #blogPosts {
     background: #33328F; }
-    #news #blogPosts article {
+    #blogPosts article {
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -167,34 +204,30 @@ button {
       padding: 2rem;
       border-radius: 1rem;
       margin-bottom: 2rem; }
-      #news #blogPosts article h2 {
+      #blogPosts article h2 {
         color: #d7ecef;
         text-align: left;
         font-size: 2rem; }
-      #news #blogPosts article h3 {
+      #blogPosts article h3 {
         text-align: left;
         color: #DF1a57;
         font-size: 1.4rem;
         font-style: italic; }
-      #news #blogPosts article p {
+      #blogPosts article p {
         text-align: left; }
-        #news #blogPosts article p a.button {
+        #blogPosts article p a.button {
           background: #DF1a57;
-          padding: 0.75rem;
+          padding: 0.5rem;
           margin: 0 0.25rem;
           border-radius: 5px;
           border: none;
-          font-size: 1.3rem;
+          font-size: 1rem;
           color: #d7ecef; }
-          #news #blogPosts article p a.button:hover {
+          #blogPosts article p a.button:hover {
             background: #1F1E44;
             color: #DF1a57;
             border-radius: 5px;
-            border: none; }
-
-@media (max-width: 768px) {
-  #blogPosts article {
-    flex-direction: column; } }
+            border: none; } }
 
 #episodes .episode h1 {
   color: #1F1E44; }
